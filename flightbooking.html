@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking - Search Flights</title>
+  <link rel="stylesheet" href="/css/flightbooking.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">MyFlight</div>
+  <div class="title">Search Flights</div>
+  <div class="profile-icon">👤</div>
+</header>
+
+<!-- Search Panel -->
+<section class="search-panel">
+  <div class="input-group">
+    <label for="from">From</label>
+    <input type="text" id="from" placeholder="Departure City or Airport">
+  </div>
+  <div class="input-group">
+    <label for="to">To</label>
+    <input type="text" id="to" placeholder="Destination City or Airport">
+  </div>
+  <div class="input-group">
+    <label for="departure">Departure Date</label>
+    <input type="date" id="departure">
+  </div>
+  <div class="input-group">
+    <label for="return">Return Date</label>
+    <input type="date" id="return">
+  </div>
+  <div class="trip-type">
+    <label>
+      <input type="radio" name="trip" value="one-way" checked> One-Way
+    </label>
+    <label>
+      <input type="radio" name="trip" value="round-trip"> Round Trip
+    </label>
+    <label>
+      <input type="radio" name="trip" value="multi-city"> Multi-City
+    </label>
+  </div>
+  <div class="input-group">
+    <label for="passengers">Passengers</label>
+    <select id="passengers">
+      <option>1 Adult</option>
+      <option>2 Adults</option>
+      <option>3 Adults</option>
+      <option>4 Adults</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="class">Class</label>
+    <select id="class">
+      <option>Economy</option>
+      <option>Premium Economy</option>
+      <option>Business</option>
+      <option>First Class</option>
+    </select>
+  </div>
+  <button class="search-btn">Search Flights</button>
+</section>
+
+<!-- Flight Results -->
+<section class="flight-results">
+  <div class="result">
+    <img src="airline-logo.png" alt="Airline Logo" class="airline-logo">
+    <div class="flight-details">
+      <h3>Airline Name</h3>
+      <p>Departure: 10:00 AM | Arrival: 1:00 PM</p>
+      <p>Non-stop | 3h</p>
+    </div>
+    <div class="price">$250</div>
+    <button class="select-btn">Select</button>
+  </div>
+  <!-- More flight results here -->
+</section>
+
+</body>
+</html>

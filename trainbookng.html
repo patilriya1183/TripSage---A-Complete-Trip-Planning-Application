@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Booking - Search Trains</title>
+  <link rel="stylesheet" href="/css/trainbooking.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">MyTrain</div>
+  <div class="title">Search Trains</div>
+  <div class="profile-icon">👤</div>
+</header>
+
+<!-- Train Search Panel -->
+<section class="search-panel">
+  <div class="input-group">
+    <label for="from">From</label>
+    <input type="text" id="from" placeholder="Departure Station">
+  </div>
+  <div class="input-group">
+    <label for="to">To</label>
+    <input type="text" id="to" placeholder="Destination Station">
+  </div>
+  <div class="input-group">
+    <label for="departure-date">Departure Date</label>
+    <input type="date" id="departure-date">
+  </div>
+  <div class="input-group">
+    <label for="return-date">Return Date (Optional)</label>
+    <input type="date" id="return-date">
+  </div>
+  <div class="trip-type">
+    <label>
+      <input type="radio" name="trip" value="one-way" checked> One-Way
+    </label>
+    <label>
+      <input type="radio" name="trip" value="round-trip"> Round Trip
+    </label>
+  </div>
+  <div class="input-group">
+    <label for="passengers">Passengers</label>
+    <select id="passengers">
+      <option>1 Adult</option>
+      <option>2 Adults</option>
+      <option>3 Adults</option>
+      <option>4 Adults</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="class">Class</label>
+    <select id="class">
+      <option>General</option>
+      <option>Sleeper</option>
+      <option>AC 3-Tier</option>
+      <option>AC 2-Tier</option>
+      <option>First Class</option>
+    </select>
+  </div>
+  <button class="search-btn">Search Trains</button>
+</section>
+
+<!-- Train Results -->
+<section class="train-results">
+  <div class="result">
+    <img src="train-icon.png" alt="Train Icon" class="train-icon">
+    <div class="train-details">
+      <h3>Express Train 12345</h3>
+      <p>Departure: 9:00 AM | Arrival: 3:00 PM</p>
+      <p>Duration: 6h | Non-stop</p>
+      <p>Class: AC 3-Tier, Sleeper</p>
+    </div>
+    <div class="price">$45</div>
+    <button class="book-btn">Book Now</button>
+  </div>
+  <!-- Additional train results can go here -->
+</section>
+
+</body>
+</html>

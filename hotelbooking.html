@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking - Search Hotels</title>
+  <link rel="stylesheet" href="/css/hotelbooking.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">MyHotel</div>
+  <div class="title">Search Hotels</div>
+  <div class="profile-icon">👤</div>
+</header>
+
+<!-- Hotel Search Panel -->
+<section class="search-panel">
+  <div class="input-group">
+    <label for="destination">Destination</label>
+    <input type="text" id="destination" placeholder="City or Hotel Name">
+  </div>
+  <div class="input-group">
+    <label for="checkin-date">Check-In Date</label>
+    <input type="date" id="checkin-date">
+  </div>
+  <div class="input-group">
+    <label for="checkout-date">Check-Out Date</label>
+    <input type="date" id="checkout-date">
+  </div>
+  <div class="input-group">
+    <label for="guests">Guests</label>
+    <select id="guests">
+      <option>1 Adult</option>
+      <option>2 Adults</option>
+      <option>3 Adults</option>
+      <option>4 Adults</option>
+      <option>5+ Adults</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="rooms">Rooms</label>
+    <select id="rooms">
+      <option>1 Room</option>
+      <option>2 Rooms</option>
+      <option>3 Rooms</option>
+      <option>4 Rooms</option>
+    </select>
+  </div>
+  <button class="search-btn">Search Hotels</button>
+</section>
+
+<!-- Hotel Results -->
+<section class="hotel-results">
+  <div class="result">
+    <img src="hotel-image.jpg" alt="Hotel Image" class="hotel-image">
+    <div class="hotel-details">
+      <h3>Hotel Name</h3>
+      <p>Location: City Center</p>
+      <p>Rating: ⭐️⭐️⭐️⭐️ | 8.5/10 Excellent</p>
+      <p>Price: $120/night</p>
+      <p>Amenities: Free Wi-Fi, Pool, Gym</p>
+    </div>
+    <div class="actions">
+      <button class="view-details-btn">View Details</button>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+  <!-- Additional hotel results can go here -->
+</section>
+
+</body>
+</html>
