@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="css/userprofile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Header Section -->
+        <div class="profile-header">
+            <h2>Welcome, {{ username }}</h2>
+            <p>Email: {{ email }}</p>
+        </div>
+
+        <!-- Personal Information Section -->
+        <div class="profile-info">
+            <h3>Personal Information</h3>
+            <p><strong>Name:</strong> {{ fullName }}</p>
+            <p><strong>Location:</strong> {{ location }}</p>
+        </div>
+
+        <!-- User Activity List Section -->
+        <div class="activity-list">
+            <h3>Your Activities</h3>
+            <ul>
+                <li *ngFor="let activity of activities">{{ activity }}</li>
+            </ul>
+        </div>
+
+        <!-- User Bookings Section -->
+        <div class="booking-list">
+            <h3>Your Bookings</h3>
+            <ul>
+                <li *ngFor="let booking of bookings">{{ booking }}</li>
+            </ul>
+        </div>
+
+        <!-- Make Packages Section -->
+        <div class="package-form">
+            <h3>Create Trip Package</h3>
+            <form (ngSubmit)="createPackage()">
+                <div class="form-group">
+                    <label for="packageName">Package Name:</label>
+                    <input type="text" id="packageName" [(ngModel)]="packageName" name="packageName" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" [(ngModel)]="packageDescription" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" [(ngModel)]="packagePrice" name="price" required>
+                </div>
+                <button type="submit" class="btn">Create Package</button>
+            </form>
+        </div>
+
+        <!-- Profile Management Section -->
+        <div class="profile-buttons">
+            <button class="btn" (click)="editProfile()">Edit Profile</button>
+            <button class="btn" (click)="viewBookings()">View Bookings</button>
+            <button class="btn" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</body>
+</html>
