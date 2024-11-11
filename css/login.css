@@ -9,11 +9,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
   
-  body {
-    font-family: "Poppins-Regular";
-    color: #333;
-    font-size: 13px;
-    margin: 0; }
+
   
   input, textarea, select, button {
     font-family: "Poppins-Regular";
@@ -73,12 +69,6 @@
         padding-left: 45px;
         padding-right: 45px;
     }
-    
-    .inner .image-holder {
-         /* Decrease image holder width to 30% */
-    }
-
-    
     .inner h3 {
       text-transform: uppercase;
       font-size: 25px;
